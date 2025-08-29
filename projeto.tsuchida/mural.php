@@ -7,18 +7,20 @@ if(isset($_POST['cadastra'])){
     $email = mysqli_real_escape_string($conexao, $_POST['email']);
     $msg   = mysqli_real_escape_string($conexao, $_POST['msg']);
 
-    $sql = "INSERT INTO recados (nome, email, mensagem) VALUES ('$nome', '$email', '$msg')";
+    $sql = "INSERT INTO usuario (nome, email, mensagem) VALUES ('$nome', '$email', '$msg')";
     mysqli_query($conexao, $sql) or die("Erro ao inserir dados: " . mysqli_error($conexao));
     header("Location: mural.php");
     exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8"/>
 <title>Mural de pedidos</title>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="recados.css"/>
+
 <script src="scripts/jquery.js"></script>
 <script src="scripts/jquery.validate.js"></script>
 <script>
@@ -58,9 +60,9 @@ $(document).ready(function() {
 </div>
 
 <?php
-$seleciona = mysqli_query($conexao, "SELECT * FROM recados ORDER BY id DESC");
+$seleciona = mysqli_query($conexao, "SELECT * FROM usuario ORDER BY id DESC");
 while($res = mysqli_fetch_assoc($seleciona)){
-    echo '<ul class="recados">';
+    echo '<ul class="usuario">';
     echo '<li><strong>ID:</strong> ' . $res['id'] . '</li>';
     echo '<li><strong>Nome:</strong> ' . htmlspecialchars($res['nome']) . '</li>';
     echo '<li><strong>Email:</strong> ' . htmlspecialchars($res['email']) . '</li>';

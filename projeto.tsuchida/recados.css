@@ -1,0 +1,182 @@
+* { 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 96%; 
+    margin: 0; 
+    padding: 0;
+    color: #5a3e4c;
+}
+label { 
+    display: block; 
+    margin-top: 10px; 
+    font-weight: 600;
+    color: #a85c7b;
+}
+label.error { 
+    float: none; 
+    color: #d94f70; 
+    margin: 0 .5em 0 0; 
+    vertical-align: top; 
+    font-size: 10px;
+    font-style: italic;
+}
+p { 
+    clear: both; 
+}
+.submit { 
+    margin-top: 1em; 
+}
+em { 
+    font-weight: bold; 
+    padding-right: 1em; 
+    vertical-align: top; 
+    color: #b35c7e;
+}
+body {
+    background: url(images/bg.png) repeat;
+    background-color: #fff0f6;
+}
+
+#main {
+    width: 500px;
+    margin: auto;
+    background: #fff5f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(179, 92, 126, 0.3);
+    padding: 20px;
+}
+
+#geral {
+    width: 500px;
+    background: #fff0f6;
+    float: left;
+    border-radius: 12px;
+}
+
+#header {
+    width: 500px;
+    height: 81px;
+    background: url(images/header.jpg);
+    float: left;
+    border-bottom: 2px solid #d98ca3;
+    border-radius: 12px 12px 0 0;
+}
+
+.recados {
+    float: left;
+    width: 480px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d98ca3;
+    background-color: #f9e6f0;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 8px;
+    color: #7a4a63;
+    font-style: italic;
+}
+
+#header h1 {
+    font-family: "Trebuchet MS", Tahoma, Verdana, "Agency FB", Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: #b35c7e;
+    margin-top: 20px;
+    margin-left: 5px;
+    text-shadow: 1px 1px 2px #f7d1e3;
+}
+#header p {
+    font-size: 14px;
+    font-style: normal;
+    color: #bfa1b8;
+    margin-left: 5px;
+}
+#header a {
+    font-weight: bold;
+    color: #a85c7b;
+    text-decoration: none;
+}
+#header a:hover {
+    color: #d94f70;
+    text-decoration: underline;
+}
+#formulario_mural {
+    text-align: center;
+    float: left;
+    width: 480px;
+    margin-bottom: 10px;
+    background: #fce4ec;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 8px #f7c6d0;
+}
+#mural input {
+    width: 150px;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #d98ca3;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #7a4a63;
+    background-color: #fff0f6;
+    transition: border-color 0.3s ease;
+}
+#mural input:focus {
+    border-color: #b35c7e;
+    outline: none;
+    background-color: #f9e6f0;
+}
+#mural textarea {
+    padding: 8px 10px;
+    height: 90px;
+    width: 140px;
+    border: 1px solid #d98ca3;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #7a4a63;
+    background-color: #fff0f6;
+    transition: border-color 0.3s ease;
+}
+#mural textarea:focus {
+    border-color: #b35c7e;
+    outline: none;
+    background-color: #f9e6f0;
+}
+.btn {
+    padding: 8px;
+    width: 100px;
+    border: 1px solid #b35c7e;
+    cursor: pointer;
+    background-color: #f7c6d0;
+    color: #7a4a63;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    background: #b35c7e;
+    color: #fff0f6;
+}
+
+#footer {
+    width: 500px;
+    height: 30px;
+    float: left;
+    display: block;
+    background: #b35c7e;
+    line-height: 30px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+#footer p {
+    color: #fce4ec;
+    padding-left: 10px;
+    font-size: 13px;
+}
+#footer a {
+    color: #f9d6e3;
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
