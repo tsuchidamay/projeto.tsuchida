@@ -37,7 +37,8 @@ body {
 }
 
 #main {
-    width: 500px;
+    width: 250px;
+    height: 15px;
     margin: auto;
     background: #fff5f8;
     border-radius: 12px;
@@ -50,15 +51,6 @@ body {
     background: #fff0f6;
     float: left;
     border-radius: 12px;
-}
-
-#header {
-    width: 500px;
-    height: 81px;
-    background: url(images/header.jpg);
-    float: left;
-    border-bottom: 2px solid #d98ca3;
-    border-radius: 12px 12px 0 0;
 }
 
 .recados {
@@ -83,22 +75,9 @@ body {
     margin-top: 20px;
     margin-left: 5px;
     text-shadow: 1px 1px 2px #f7d1e3;
+    text-align: center;
 }
-#header p {
-    font-size: 14px;
-    font-style: normal;
-    color: #bfa1b8;
-    margin-left: 5px;
-}
-#header a {
-    font-weight: bold;
-    color: #a85c7b;
-    text-decoration: none;
-}
-#header a:hover {
-    color: #d94f70;
-    text-decoration: underline;
-}
+
 #formulario_mural {
     text-align: center;
     float: left;
@@ -158,7 +137,7 @@ body {
 }
 
 #footer {
-    width: 500px;
+    width: 510px;
     height: 30px;
     float: left;
     display: block;

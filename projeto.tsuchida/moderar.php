@@ -34,15 +34,16 @@ if($editar_id){
 <html lang="pt-br">
 <head>
 <meta charset="utf-8"/>
-<title>Moderar pedidos</title>
+<title>Recadinhos</title>
 <link rel="stylesheet" href="recados.css"/>
 </head>
 <body>
 <div id="main">
-<div id="geral">
 <div id="header">
-    <h1>Mural de pedidos</h1>
+    <h1>Recadinhos</h1>
 </div>
+<div id="geral">
+
 
 <?php if($recado_editar): ?>
 <div id="formulario_mural">
