@@ -35,7 +35,7 @@ if($editar_id){
 <head>
 <meta charset="utf-8"/>
 <title>Recadinhos</title>
-<link rel="stylesheet" href="recados.css"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <div id="main">
@@ -79,6 +79,7 @@ if(mysqli_num_rows($seleciona) <= 0){
 ?>
 
 <div id="footer">
+<p> &copy Recadinhos 2025 </p>
 </div>
 </div>
 </div>

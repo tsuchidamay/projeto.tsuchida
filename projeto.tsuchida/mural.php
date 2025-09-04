@@ -19,7 +19,7 @@ if(isset($_POST['cadastra'])){
 <head>
 <meta charset="utf-8"/>
 <title>Recadinhos</title>
-<link rel="stylesheet" href="recados.css"/>
+<link rel="stylesheet" href="style.css"/>
 
 <script src="scripts/jquery.js"></script>
 <script src="scripts/jquery.validate.js"></script>
@@ -41,10 +41,11 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-<div id="main">
 <div id="header">
     <h1>Recadinhos</h1>
 </div>
+
+<div id="main">
 <div id="geral">
 
 
@@ -60,22 +61,12 @@ $(document).ready(function() {
 </form>
 </div>
 
-<?php
-$seleciona = mysqli_query($conexao, "SELECT * FROM usuario ORDER BY id DESC");
-while($res = mysqli_fetch_assoc($seleciona)){
-    echo '<ul class="usuario">';
-    echo '<li><strong>ID:</strong> ' . $res['id'] . '</li>';
-    echo '<li><strong>Nome:</strong> ' . htmlspecialchars($res['nome']) . '</li>';
-    echo '<li><strong>Email:</strong> ' . htmlspecialchars($res['email']) . '</li>';
-    echo '<li><strong>Mensagem:</strong> ' . nl2br(htmlspecialchars($res['mensagem'])) . '</li>';
-    echo '</ul>';
-}
-?>
 
 <div id="footer">
-
+ <p> &copy Recadinhos 2025 </p>
 </div>
 </div>
 </div>
 </body>
 </html>
+
