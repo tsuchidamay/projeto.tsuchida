@@ -17,7 +17,7 @@ if (!$conexao) {
 mysqli_set_charset($conexao, "utf8");
 
 // Substituam os valores abaixo pelas credenciais da sua própria conta do Cloudinary
-$cloud_name = "Mayara";  // exemplo: "meucloud123"
+$cloud_name = "dcyosnjtr";  // exemplo: "meucloud123"
 $api_key    = "749879538611754";     // exemplo: "123456789012345"
 $api_secret = "fNJcHimcZn8yIn3lRCh0_K9bt4o";  // exemplo: "abcdeFGHijkLMNopqrstu"
 ?>

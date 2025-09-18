@@ -1,0 +1,322 @@
+/* ==========================
+   ESTILOS GERAIS - TEMA FEMININO
+   ========================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf7f5;
+    color: #5a5a5a;
+    line-height: 1.6;
+}
+
+#main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#geral {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(245, 200, 210, 0.2);
+    overflow: hidden;
+}
+
+/* ==========================
+   HEADER
+   ========================== */
+#header {
+    background: linear-gradient(135deg, #f8c8dc 0%, #d9a7c7 100%);
+    color: #7a4a6a;
+    padding: 25px;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ==========================
+   FORMULÁRIO
+   ========================== */
+#formulario_mural {
+    padding: 25px;
+    background: #fffafa;
+    border-bottom: 1px solid #f9e6ef;
+}
+
+#mural {
+    display: grid;
+    gap: 12px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+#mural label {
+    font-weight: 500;
+    color: #8a6d7a;
+    margin-bottom: 4px;
+    font-size: 0.95em;
+}
+
+#mural input[type="text"],
+#mural input[type="number"],
+#mural input[type="file"],
+#mural textarea {
+    padding: 10px;
+    border: 1.5px solid #e8d5e0;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+#mural input[type="text"]:focus,
+#mural input[type="number"]:focus,
+#mural textarea:focus {
+    border-color: #d9a7c7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(217, 167, 199, 0.1);
+}
+
+#mural textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.btn {
+    background: linear-gradient(135deg, #f4acbc 0%, #d9a7c7 100%);
+    color: #fff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(244, 172, 188, 0.3);
+}
+
+/* ==========================
+   CONTAINER DE PRODUTOS
+   ========================== */
+.produtos-container {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background: #fff;
+    border: 1px solid #f5e6ed;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 3px 10px rgba(245, 200, 210, 0.15);
+    transition: all 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(245, 200, 210, 0.25);
+}
+
+.produto p {
+    margin-bottom: 10px;
+    color: #7a6a75;
+    font-size: 0.95em;
+}
+
+.produto strong {
+    color: #8a6d7a;
+    font-weight: 500;
+}
+
+.produto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 12px 0;
+    border: 2px solid #f9e6ef;
+}
+
+/* ==========================
+   BOTÕES DE AÇÃO
+   ========================== */
+.produto a {
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 4px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.produto a[href*="excluir"] {
+    background: #e8b4bc;
+    color: #fff;
+}
+
+.produto a[href*="excluir"]:hover {
+    background: #d49aa3;
+}
+
+.produto a[href*="editar"] {
+    background: #b4d0c4;
+    color: #fff;
+}
+
+.produto a[href*="editar"]:hover {
+    background: #9dbaac;
+}
+
+/* ==========================
+   FORMULÁRIO DE EDIÇÃO
+   ========================== */
+.produto form {
+    margin-top: 12px;
+    padding: 12px;
+    background: #fcf8fa;
+    border-radius: 8px;
+    border: 1.5px solid #f5e6ed;
+}
+
+.produto form input[type="text"],
+.produto form input[type="number"],
+.produto form textarea {
+    width: 100%;
+    padding: 9px;
+    margin: 4px 0;
+    border: 1.5px solid #e8d5e0;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.produto form input[type="submit"] {
+    background: #d9a7c7;
+    color: white;
+    padding: 9px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.produto form input[type="submit"]:hover {
+    background: #c895b5;
+}
+
+.produto form a {
+    background: #d1c2d6;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.produto form a:hover {
+    background: #beaec4;
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+#footer {
+    background: #f8f0f5;
+    color: #8a7a85;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+    border-top: 1px solid #f5e6ed;
+}
+
+#footer p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+@media (max-width: 768px) {
+    #main {
+        padding: 15px;
+    }
+    
+    .produtos-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    #header {
+        padding: 20px;
+    }
+    
+    #header h1 {
+        font-size: 1.8em;
+    }
+    
+    #formulario_mural {
+        padding: 20px;
+    }
+    
+    .produto {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #mural {
+        gap: 8px;
+    }
+    
+    .produto img {
+        height: 200px;
+    }
+    
+    .btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+    
+    .produto a {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+}
+
+/* Elementos decorativos adicionais */
+.produto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #f4acbc, #d9a7c7);
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.produto:hover::before {
+    opacity: 1;
+}
