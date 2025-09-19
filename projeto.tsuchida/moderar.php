@@ -93,7 +93,7 @@ COMPARAÇÃO:
 <head>
 <meta charset="utf-8"/>
 <title>Moderar Produtos</title>
-<link rel="stylesheet" href="produto.css"/>
+<link rel="stylesheet" href="mural.css"/>
 </head>
 <body>
 <div id="main">
@@ -106,8 +106,8 @@ COMPARAÇÃO:
             <?php while($res = mysqli_fetch_assoc($produtos)): ?>
                 <div class="produto">
                 <p><img src="<?= htmlspecialchars($res['imagem_url']) ?>" alt="<?= htmlspecialchars($res['nome']) ?>"></p>
-                    <p><strong> <?= $res['id'] ?></strong></p>
-                    <p><strong>Nome:</strong> <?= htmlspecialchars($res['nome']) ?></p>
+                    <p><strong>ID:</strong> <?= $res['id'] ?></p>
+                    <p><strong> <?= htmlspecialchars($res['nome']) ?></strong> </p>
                     <p><strong>Preço:</strong> R$ <?= number_format($res['preco'], 2, ',', '.') ?></p>
                     <p><strong>Descrição:</strong> <?= nl2br(htmlspecialchars($res['descricao'])) ?></p>
                     

@@ -78,7 +78,7 @@ COMPARAÇÃO COM O CÓDIGO DE "ANTIGOxCLOUDINARY"
 <head>
 <meta charset="utf-8"/>
 <title>Mural de Produtos</title>
-<link rel="stylesheet" href="produto.css"/>
+<link rel="stylesheet" href="mural.css"/>
 
 <!--
 COMPARAÇÃO: No código ANTIGO/pedidos havia jQuery + jQuery Validate
@@ -140,11 +140,12 @@ $(document).ready(function() {
         $seleciona = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY id DESC");
         while($res = mysqli_fetch_assoc($seleciona)){
             echo '<div class="produto">';
+            echo '<img src="' . htmlspecialchars($res['imagem_url']) . '" alt="' . htmlspecialchars($res['nome']) . '">';
             echo '<p><strong>ID:</strong> ' . $res['id'] . '</p>';
-            echo '<p><strong>Nome:</strong> ' . htmlspecialchars($res['nome']) . '</p>';
+            echo '<p><strong> ' . htmlspecialchars($res['nome']) . '</strong></p>';
             echo '<p><strong>Preço:</strong> R$ ' . number_format($res['preco'], 2, ',', '.') . '</p>';
             echo '<p><strong>Descrição:</strong> ' . nl2br(htmlspecialchars($res['descricao'])) . '</p>';
-            echo '<img src="' . htmlspecialchars($res['imagem_url']) . '" alt="' . htmlspecialchars($res['nome']) . '">';
+            
             echo '</div>';
         }
 
