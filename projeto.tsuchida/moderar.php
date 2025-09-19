@@ -105,11 +105,12 @@ COMPARAÇÃO:
         <div class="produtos-container">
             <?php while($res = mysqli_fetch_assoc($produtos)): ?>
                 <div class="produto">
-                    <p><strong>ID:</strong> <?= $res['id'] ?></p>
+                <p><img src="<?= htmlspecialchars($res['imagem_url']) ?>" alt="<?= htmlspecialchars($res['nome']) ?>"></p>
+                    <p><strong> <?= $res['id'] ?></strong></p>
                     <p><strong>Nome:</strong> <?= htmlspecialchars($res['nome']) ?></p>
                     <p><strong>Preço:</strong> R$ <?= number_format($res['preco'], 2, ',', '.') ?></p>
                     <p><strong>Descrição:</strong> <?= nl2br(htmlspecialchars($res['descricao'])) ?></p>
-                    <p><img src="<?= htmlspecialchars($res['imagem_url']) ?>" alt="<?= htmlspecialchars($res['nome']) ?>"></p>
+                    
 
                     <!-- Link para excluir -->
                     <a href="moderar.php?excluir=<?= $res['id'] ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
@@ -132,5 +133,9 @@ COMPARAÇÃO:
         </div>
     </div>
 </div>
+<div id="footer">
+            <p>Mural - Cloudinary & PHP</p>
+            <!-- No código anterior, o footer estava vazio -->
+        </div>
 </body>
 </html>

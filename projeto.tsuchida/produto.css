@@ -1,322 +1,345 @@
-/* ==========================
-   ESTILOS GERAIS - TEMA FEMININO
-   ========================== */
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #faf7f5;
-    color: #5a5a5a;
-    line-height: 1.6;
-}
+        /* ==========================
+           ESTILOS GERAIS - TEMA FEMININO APERFEIÇOADO
+           ========================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-#main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fffafb 0%, #fef5f9 100%);
+            color: #5a5a5a;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
 
-#geral {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(245, 200, 210, 0.2);
-    overflow: hidden;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(149, 79, 114, 0.15);
+            overflow: hidden;
+        }
 
-/* ==========================
-   HEADER
-   ========================== */
-#header {
-    background: linear-gradient(135deg, #f8c8dc 0%, #d9a7c7 100%);
-    color: #7a4a6a;
-    padding: 25px;
-    text-align: center;
-}
+        /* ==========================
+           HEADER
+           ========================== */
+        .header {
+            background: linear-gradient(135deg, #f8c8dc 0%, #d9a7c7 100%);
+            color: #7a4a6a;
+            padding: 28px 35px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-#header h1 {
-    font-size: 2.2em;
-    margin-bottom: 8px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+            transform: rotate(30deg);
+        }
 
-/* ==========================
-   FORMULÁRIO
-   ========================== */
-#formulario_mural {
-    padding: 25px;
-    background: #fffafa;
-    border-bottom: 1px solid #f9e6ef;
-}
+        .header h1 {
+            font-size: 2.4em;
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            position: relative;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+        }
 
-#mural {
-    display: grid;
-    gap: 12px;
-    max-width: 550px;
-    margin: 0 auto;
-}
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
 
-#mural label {
-    font-weight: 500;
-    color: #8a6d7a;
-    margin-bottom: 4px;
-    font-size: 0.95em;
-}
+        /* ==========================
+           BARRA DE PESQUISA E FILTROS
+           ========================== */
+        .search-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 35px;
+            background: #fdf8fa;
+            border-bottom: 1px solid #f9e6ef;
+        }
 
-#mural input[type="text"],
-#mural input[type="number"],
-#mural input[type="file"],
-#mural textarea {
-    padding: 10px;
-    border: 1.5px solid #e8d5e0;
-    border-radius: 6px;
-    font-size: 15px;
-    transition: all 0.3s ease;
-    background: #fff;
-}
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 50px;
+            padding: 8px 20px;
+            box-shadow: 0 3px 10px rgba(217, 167, 199, 0.15);
+            width: 60%;
+        }
 
-#mural input[type="text"]:focus,
-#mural input[type="number"]:focus,
-#mural textarea:focus {
-    border-color: #d9a7c7;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(217, 167, 199, 0.1);
-}
+        .search-box input {
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            font-size: 1em;
+            background: transparent;
+            outline: none;
+        }
 
-#mural textarea {
-    min-height: 90px;
-    resize: vertical;
-}
+        .search-box i {
+            color: #d9a7c7;
+        }
 
-.btn {
-    background: linear-gradient(135deg, #f4acbc 0%, #d9a7c7 100%);
-    color: #fff;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 0.5px;
-}
+        .filters {
+            display: flex;
+            gap: 15px;
+        }
 
-.btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(244, 172, 188, 0.3);
-}
+        .filter-btn {
+            background: white;
+            border: 1px solid #f4d5e3;
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: #8a6d7a;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-/* ==========================
-   CONTAINER DE PRODUTOS
-   ========================== */
-.produtos-container {
-    padding: 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
-}
+        .filter-btn:hover {
+            background: #fdf2f7;
+            box-shadow: 0 3px 8px rgba(217, 167, 199, 0.2);
+        }
 
-.produto {
-    background: #fff;
-    border: 1px solid #f5e6ed;
-    border-radius: 10px;
-    padding: 18px;
-    box-shadow: 0 3px 10px rgba(245, 200, 210, 0.15);
-    transition: all 0.3s ease;
-}
+        /* ==========================
+           CONTAINER DE PRODUTOS
+           ========================== */
+        .produtos-container {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
 
-.produto:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(245, 200, 210, 0.25);
-}
+        .produto {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(220, 175, 199, 0.15);
+            transition: all 0.3s ease;
+            border: 1px solid #f9e6ef;
+            position: relative;
+        }
 
-.produto p {
-    margin-bottom: 10px;
-    color: #7a6a75;
-    font-size: 0.95em;
-}
+        .produto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(220, 175, 199, 0.25);
+        }
 
-.produto strong {
-    color: #8a6d7a;
-    font-weight: 500;
-}
+        .produto-header {
+            background: linear-gradient(135deg, #fae3ed 0%, #f6d5e4 100%);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.produto img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 12px 0;
-    border: 2px solid #f9e6ef;
-}
+        .produto-id {
+            background: white;
+            color: #d9a7c7;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(149, 79, 114, 0.1);
+        }
 
-/* ==========================
-   BOTÕES DE AÇÃO
-   ========================== */
-.produto a {
-    display: inline-block;
-    padding: 7px 14px;
-    margin: 4px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 0.9em;
-    transition: all 0.3s ease;
-}
+        .produto-category {
+            color: #9c7287;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
 
-.produto a[href*="excluir"] {
-    background: #e8b4bc;
-    color: #fff;
-}
+        .produto-body {
+            padding: 20px;
+        }
 
-.produto a[href*="excluir"]:hover {
-    background: #d49aa3;
-}
+        .produto-nome {
+            font-size: 1.4em;
+            color: #8a4a6a;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
 
-.produto a[href*="editar"] {
-    background: #b4d0c4;
-    color: #fff;
-}
+        .produto-preco {
+            font-size: 1.5em;
+            color: #d9a7c7;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-.produto a[href*="editar"]:hover {
-    background: #9dbaac;
-}
+        .produto-preco .original {
+            text-decoration: line-through;
+            font-size: 0.8em;
+            color: #b8b8b8;
+        }
 
-/* ==========================
-   FORMULÁRIO DE EDIÇÃO
-   ========================== */
-.produto form {
-    margin-top: 12px;
-    padding: 12px;
-    background: #fcf8fa;
-    border-radius: 8px;
-    border: 1.5px solid #f5e6ed;
-}
+        .produto-descricao {
+            color: #7a6a75;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            padding: 15px;
+            background: #fdf8fa;
+            border-radius: 8px;
+            border-left: 3px solid #d9a7c7;
+        }
 
-.produto form input[type="text"],
-.produto form input[type="number"],
-.produto form textarea {
-    width: 100%;
-    padding: 9px;
-    margin: 4px 0;
-    border: 1.5px solid #e8d5e0;
-    border-radius: 5px;
-    background: #fff;
-}
+        .produto-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #fae3ed 0%, #f6d5e4 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: #d9a7c7;
+            font-size: 3em;
+        }
 
-.produto form input[type="submit"] {
-    background: #d9a7c7;
-    color: white;
-    padding: 9px 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 8px;
-    font-weight: 500;
-}
+        .produto-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background: #fdf8fa;
+            border-top: 1px solid #f9e6ef;
+        }
 
-.produto form input[type="submit"]:hover {
-    background: #c895b5;
-}
+        /* ==========================
+           BOTÕES DE AÇÃO
+           ========================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+        }
 
-.produto form a {
-    background: #d1c2d6;
-    color: white;
-    padding: 9px 18px;
-    border-radius: 5px;
-    font-size: 0.9em;
-}
+        .btn-excluir {
+            background: #ff6b8b;
+            color: white;
+        }
 
-.produto form a:hover {
-    background: #beaec4;
-}
+        .btn-excluir:hover {
+            background: #ff4770;
+            box-shadow: 0 4px 12px rgba(255, 107, 139, 0.3);
+        }
 
-/* ==========================
-   FOOTER
-   ========================== */
-#footer {
-    background: #f8f0f5;
-    color: #8a7a85;
-    text-align: center;
-    padding: 18px;
-    margin-top: 25px;
-    border-top: 1px solid #f5e6ed;
-}
+        .btn-editar {
+            background: #a5d6c9;
+            color: white;
+        }
 
-#footer p {
-    font-size: 13px;
-    opacity: 0.8;
-}
+        .btn-editar:hover {
+            background: #8dc8b8;
+            box-shadow: 0 4px 12px rgba(165, 214, 201, 0.3);
+        }
 
-/* ==========================
-   RESPONSIVIDADE
-   ========================== */
-@media (max-width: 768px) {
-    #main {
-        padding: 15px;
-    }
-    
-    .produtos-container {
-        grid-template-columns: 1fr;
-        padding: 15px;
-        gap: 15px;
-    }
-    
-    #header {
-        padding: 20px;
-    }
-    
-    #header h1 {
-        font-size: 1.8em;
-    }
-    
-    #formulario_mural {
-        padding: 20px;
-    }
-    
-    .produto {
-        padding: 15px;
-    }
-}
+        /* ==========================
+           FOOTER
+           ========================== */
+        .footer {
+            background: #f8f0f5;
+            color: #8a7a85;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #f5e6ed;
+        }
 
-@media (max-width: 480px) {
-    #mural {
-        gap: 8px;
-    }
-    
-    .produto img {
-        height: 200px;
-    }
-    
-    .btn {
-        padding: 10px 18px;
-        font-size: 14px;
-    }
-    
-    .produto a {
-        padding: 6px 12px;
-        font-size: 0.85em;
-    }
-}
+        .footer p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
 
-/* Elementos decorativos adicionais */
-.produto::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #f4acbc, #d9a7c7);
-    border-radius: 10px 10px 0 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+        /* ==========================
+           RESPONSIVIDADE
+           ========================== */
+        @media (max-width: 900px) {
+            .produtos-container {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            
+            .search-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .search-box {
+                width: 100%;
+            }
+            
+            .filters {
+                width: 100%;
+                justify-content: center;
+            }
+        }
 
-.produto:hover::before {
-    opacity: 1;
-}
+        @media (max-width: 600px) {
+            .produtos-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .produto-footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        /* Efeitos e animações */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .produto {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .produto:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+  

@@ -114,6 +114,7 @@ $(document).ready(function() {
         ========================== -->
         <div id="formulario_mural">
             <form id="mural" method="post" enctype="multipart/form-data">
+                
                 <label>Nome do produto:</label>
                 <input type="text" name="nome" required/>
 
